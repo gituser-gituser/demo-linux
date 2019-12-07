@@ -1,0 +1,8 @@
+unset SSH_ASKPASS	取消重复密码验证
+git add 文件夹/文件
+git commit -m 说明
+git push -u origin master	（origin: 仓库分支）将文件上传到git中
+git clone 仓库		克隆仓库
+
+git报错：
+1、vim .git/config	url=https://gituser-gituser@githud.com/gituser-gituser/仓库.git

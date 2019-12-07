@@ -1,0 +1,13 @@
+git lfs的安装：
+curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
+
+//如果上面下载失败，请输入这个试试：curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
+yum install git-lfs
+git lfs install
+
+上传大于100mb以上的文件：
+git clone 仓库路径
+git lfs install		初始化git lfs
+git lfs track 大文件	追踪大文件
+git add .		添加大文件
+git push		提交
