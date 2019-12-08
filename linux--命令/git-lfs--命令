@@ -1,7 +1,7 @@
 git lfs的安装：
-curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
+curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.rpm.sh | sudo bash
 
-//如果上面下载失败，请输入这个试试：curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
+//如果上面下载失败，请输入这个试试：curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.rpm.sh | sudo bash
 yum install git-lfs
 git lfs install
 
