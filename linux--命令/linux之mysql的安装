@@ -1,0 +1,17 @@
+rpm -qa|grep mysql
+yum remove mysql-*
+tar xvf MySQL-5.5.45-1.linux2.6.x86_64.rpm-bundle.tar
+rpm -ivh Mysql-cli*
+rpm -ivh Mysql-dev*
+rpm -ivh Mysql-server*
+mysql -u root -p:
+ use mysql;
+ update user set password=password("root") where user='root';
+ quit;
+service mysql restart
+mysql -u root -proot:
+ set password=password('root');
+ flush privileges;
+ grant all privileges on *.* to 'root'@'%' identified by 'root' with grant option;
+ flush privileges;
+ quit;
